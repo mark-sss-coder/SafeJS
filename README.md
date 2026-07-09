@@ -55,7 +55,7 @@ node "path/to/the/file/transpiler.js" "path/to/your/.sjs/file" "path/where/you/w
 ```
 *Note: Make sure you have **Node.js** installed on your system before running.*
 # File extension
-.sjs
+## .sjs
 # VS Code extension
 If you are using VS Code then you can use the extension.
 Download the .vsix archive from .vscode folder (safejs-syntax-1.0.0.vsix).

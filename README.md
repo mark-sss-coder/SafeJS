@@ -46,3 +46,23 @@ Values of this property:
 You can't use *delete this*.
 # *isStrict* variable
 This variable controls the SafeJS strict mode.
+# Node.js needed
+Please download [Node.js](https://nodejs.org/) because it needed for a transpiler.
+# How to use transpiler?
+Run the following command in your terminal (Works on macOS, Linux, and Windows):
+```bash
+node "path/to/the/file/transpiler.js" "path/to/your/.sjs/file" "path/where/you/want/to/make/.js/file"
+```
+*Note: Make sure you have **Node.js** installed on your system before running.*
+# File extension
+.sjs
+# VS Code extension
+If you are using VS Code then you can use the extension.
+Download the .vsix archive from .vscode folder (safejs-syntax-1.0.0.vsix).
+Open VS Code, press Ctrl (Cmd on MacOS) + Shift + X or open the extensions tab.
+Press *...* button in top-right, select **Install from VSIX...**,
+select the downloaded safejs-syntax-1.0.0.vsix file and press **OK**, **Install** or **Done** button.
+
+Create any .sjs file... Hooray! You will get the beautiful syntax
+highlighting.
+# Coming soon: Online SafeJS Transpiler

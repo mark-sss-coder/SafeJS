@@ -1,0 +1,47 @@
+{
+  	"name": "safejs-syntax",
+  	"displayName": "SafeJS Language Support",
+  	"version": "1.0.0",
+  	"icon": "images/SafeJS image.png",
+  	"engines": {
+		"vscode": "^1.60.0"
+  	},
+  	"contributes": {
+		"languages": [{
+		  	"id": "safejs",
+		  	"aliases": ["SafeJS"],
+		  	"extensions": [".sjs"],
+		  	"configuration": "./language-configuration.json",
+			
+		  	"icon": {
+				"light": "./images/fileIcon.png",
+				"dark": "./images/fileIcon.png"
+		  	}
+		}],
+		"grammars": [
+		  	{
+				"language": "safejs",
+				"scopeName": "source.sjs",
+				"path": "./syntaxes/safejs-base.tmLanguage.json"
+		  	},
+		  	{
+				"scopeName": "safejs.injection.with-rules",
+				"path": "./syntaxes/safejs.tmLanguage.json", 
+				"injectTo": ["source.sjs"] 
+		  	}
+		],
+		"configurationDefaults": {
+		  	"editor.tokenColorCustomizations": {
+				"textMateRules": [
+				  	{
+						"scope": "keyword.control.destroy.safejs",
+						"settings": {
+						  	"foreground": "#FF0000",
+						  	"fontStyle": "bold"
+						}
+				  	}
+				]
+		  	}       
+		}
+  	}
+}

@@ -65,4 +65,7 @@ select the downloaded safejs-syntax-1.0.0.vsix file and press **OK**, **Install*
 
 Create any .sjs file... Hooray! You will get the beautiful syntax
 highlighting.
+# Warning
+**Do not** use 'delete variable' operator for the local variables. Use localVariable = removed;
+
 # Coming soon: Online SafeJS Transpiler

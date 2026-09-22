@@ -5,6 +5,7 @@ SafeJS is the simple language based on JavaScript. The SafeJS transpiles to Java
 - *weak cache function* - caches the function in a WeakMap
 - *cache /\* arrow function \*/* - caches the arrow function
 - *weak cache /\* arrow function \*/* - caches the arrow function in a WeakMap
+
 Dependence on arguments. If you have changed the arguments, result will re-count.
 # *destroy* method in classes
 This method calls when other code tries to delete the instance. In destroy, like in a constructor, *this* is an instance.
